@@ -1,6 +1,6 @@
 class MagazinesController < ApplicationController
 
   def show
-    @subscriptions = Subscription.all
+    @magazine = Magazine.find(params[:id])
   end
 end
